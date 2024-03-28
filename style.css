@@ -4,6 +4,9 @@
   font-family: Arial, Helvetica, sans-serif;
   border: border-box;
 }
+body {
+  background-color: rgb(182, 182, 182);
+}
 /* navSection.................................. */
 #navbar {
   height: 60px;
@@ -12,15 +15,12 @@
   justify-content: space-evenly;
   align-items: center;
   border: 1px solid transparent;
- 
 }
-
 #nav-logo {
   margin-top: 15px;
   height: 50px;
   width: 100px;
 }
-
 #logo {
   display: flex;
   background-image: url("/img/logo.png");
@@ -175,32 +175,114 @@
   cursor: pointer;
 }
 /* banner.....................................*/
-#banner{
+#banner {
   height: 39px;
   background-color: #32324b;
   display: flex;
   align-items: center;
   justify-content: start;
   color: white;
-} 
-.banner-selector{
+}
+.banner-selector {
   background-color: transparent;
   display: flex;
   display: flex;
   align-items: center;
   height: 14px;
   width: 17px;
-  
-
 }
-.banner-select{
+.banner-select {
   margin-left: 5px;
   font-size: 14px;
   font-weight: bold;
 }
-.banner-items{
+.banner-items {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 600px;
+}
+/* main section............................................. */
+#main {
+  height: 600px;
+  width: 100%;
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+.content-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -300px;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.boxes {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: 340px;
+  width: 250px;
+  padding: 20px;
+  border: none;
+  border-radius: 7px;
+}
+.content-img {
+  position: relative;
+  height: 303px;
+  background-size: cover;
+}
+.boxes a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(119, 157, 170);
+}
+.content-boxes a:hover {
+  color: rgb(228, 200, 16);
+}
+/* bottom banner */
+
+#bottom-banner {
+  display: flex;
+  height: 39px;
+  background-color: #32324b;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  margin-top: 20px;
+}
+/* footer................................... */
+#footer {
+  background-color: #313838;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.footer-info {
+  height: 250px;
+  width: 170px;
+  margin: 10px;
+  background-color: transparent;
+  font-size: 14px;
+}
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+#footer-logo {
+  display: flex;
+  height: 60px;
+  background-color: #232334;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  height: 30px;
+  width: 100px;
+  background-image: url("img/logo.png");
+  background-size: cover;
 }
